@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="utf-8">
+		<title>Hello, World</title>
+		<style>
+
+		body {
+			font: 18px/30px helvetica, sans-serif;
+		}
+
+		span {
+    		background: #ff9;
+		}
+		</style>
+	</head>
+	<body>
+		
+		<p>
+			Alfred <span id="middle name">(middle name)</span> Skarbek Korzybski (July 3, 1879 – March 1, 1950) was a <span id="nationality">(nationality)</span>-American philosopher and scientist. He is remembered for developing the theory of general <span id="hobby">(hobby)</span>.Korzybski's work argued that human knowledge of the world is limited both by the human nervous system and by the structure of <span id="food">(food)</span>.
+
+			Korzybski thought that people do not have access to direct knowledge of reality; rather they have access to perceptions and to a set of beliefs which human society has confused with direct knowledge of reality. Korzybski is remembered as the author of the dictum: "The <span id="object-1">(object)</span> is not the <span id="object-2">(object)</span>.
+		</p>
+		
+		<script>
+		
+		document.getElementById('middle name').innerHTML  = prompt('[1/6] Enter a fun first name');
+		document.getElementById('nationality').innerHTML  = prompt('[2/6] Enter a nationality');
+		document.getElementById('hobby').innerHTML  = prompt('[3/6] Pick a hobby');
+		document.getElementById('food').innerHTML = prompt('[4/6] Pick a food');
+		document.getElementById('object-1').innerHTML    = prompt('[5/6] Enter an object');
+		document.getElementById('object-2').innerHTML   = prompt('[6/6] Enter an object');
+
+		</script>
+	</body>
+</html>
