@@ -1,0 +1,52 @@
+body {
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: 17px;
+        background-image: url(pattern-5sml.png);
+    }
+
+.container {
+  width: 500px;
+  background-color: rgba(500, 300, 300, 0.5);
+  padding: 30px;
+  margin: 30px auto;
+}
+
+#profile {
+  float: left;
+  border: 2px solid #ccc;
+  margin: 7px 15px 8px 0;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+ul li {
+  list-style: none;
+  margin-top: 15px;
+  border-top: 2px solid #ccc;
+  padding-top: 15px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+a {
+  color: #780;
+}
+
+a:hover {
+  color: #000;
+}
+
+a:hover #profile {
+  border-color: #9c0;
+}
+
+p {
+  margin: 0.5em 0 1em 0;
+}
