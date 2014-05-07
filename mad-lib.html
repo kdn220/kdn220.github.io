@@ -23,6 +23,24 @@
 		</p>
 		
 		<script>
+
+		var placeholders = [
+			'middle name',
+			'nationality',
+			'hobby',
+			'food',
+			'object-1',
+			'object-2'
+		];
+
+		for (var i = 0; i < placeholders.length; i++) {
+			var id = placeholders[i];
+			var span = document.getElementById(id);
+			var word = prompt('Please enter a '+ span.innerHTML);
+			span.innerHTML = word;
+		}
+
+		/*
 		
 		document.getElementById('middle name').innerHTML  = prompt('[1/6] Enter a fun first name');
 		document.getElementById('nationality').innerHTML  = prompt('[2/6] Enter a nationality');
@@ -30,6 +48,7 @@
 		document.getElementById('food').innerHTML = prompt('[4/6] Pick a food');
 		document.getElementById('object-1').innerHTML    = prompt('[5/6] Enter an object');
 		document.getElementById('object-2').innerHTML   = prompt('[6/6] Enter an object');
+		*/
 
 		</script>
 	</body>
