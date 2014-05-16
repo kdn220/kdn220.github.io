@@ -39,10 +39,10 @@
 			span.addEventListener('click', replaceWord, false);
 		}
 
-		function replaceWord() {
+		function replaceWord(e) {
 			var span = e.target; 
 			var wordPrompt = span.getAttribute('data-prompt');
-			var word = prompt('Please enter a '+ span.innerHTML);
+			var word = prompt('Please enter a '+ wordPrompt);
 			if (word !== null) {
 				span.innerHTML = word;
 			}
