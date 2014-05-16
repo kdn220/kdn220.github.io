@@ -35,11 +35,18 @@
 
 		for (var i = 0; i < placeholders.length; i++) {
 			var id = placeholders[i];
-			var span = document.getElementById(id);
-			var word = prompt('Please enter a '+ span.innerHTML);
-			span.innerHTML = word;
+			var span = document.getElementById(id);	
+			span.addEventListener('click', replaceWord, false);
 		}
 
+		function replaceWord() {
+			var span = e.target; 
+			var wordPrompt = span.getAttribute('data-prompt');
+			var word = prompt('Please enter a '+ span.innerHTML);
+			if (word !== null) {
+				span.innerHTML = word;
+			}
+		}
 		/*
 		
 		document.getElementById('middle name').innerHTML  = prompt('[1/6] Enter a fun first name');
